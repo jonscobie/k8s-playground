@@ -1,0 +1,13 @@
+version: 0.1
+log:
+  level: info
+  formatter: text
+  fields:
+    service: registry
+storage:
+  filesystem:
+    rootdirectory: /var/lib/registry
+http:
+  addr: host.docker.internal:5000
+  headers:
+    X-Content-Type-Options: [nosniff]
